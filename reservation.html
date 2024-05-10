@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<!--=============== REMIXICONS ===============-->
+<link
+  href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+
+<!--=============== SWIPER CSS ===============-->
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+<title>Reservation</title>
+<style>
+    .container form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("assets/img/reservation_img.jpg"); /* Replace 'placeholder_image.jpg' with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    background: rgba(0, 0, 0, 0.658); /* Reduced opacity */
+    /* background: rgba(255, 255, 255, 0.9); */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100vh;
+    width: 70%;
+    text-align: center;
+  }
+
+
+  .container h1 {
+    font-size: 4rm;
+    margin-bottom: 20px;
+    color: #fcfcfc;
+  }
+
+  .container form input {
+    /* background: rgba(12, 11, 11, 0.3); */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .container form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff75;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .container form button:hover {
+    background-color: #0056b3;
+  }
+
+  .container p {
+    margin-top: 15px;
+    color: #fffdfd;
+  }
+
+</style>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container" style="background: rgba(0, 0, 0, 0.0);">
+            <a href="#" class="nav__logo">Company Name</a>
+    
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                    </li>
+
+                </ul>
+    
+
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Make a Reservation</h1>
+        <form>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <input type="text" placeholder="Phone Number" required>
+          <select name="destination" required>
+            <option value="" selected disabled>Select Destination</option>
+            <option value="Paris">Paris</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="New York">New York</option>
+            <!-- Add more destination options as needed -->
+          </select>
+          <input type="date" placeholder="Select Date" required>
+          <button type="submit">Make Reservation</button>
+        </form>
+        <p>Already have a reservation? <a href="#">Manage Reservation</a></p>
+      </div>
+</body>
+</html>
